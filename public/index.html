@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notification Sender</title>
+  <link rel="stylesheet" href="../src/index.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Shopify Notifications</h1>
+
+    <!-- Token field -->
+    <label for="token">Token:</label>
+    <input type="text" id="token" placeholder="Enter Token" required>
+
+    <!-- Fixed Order # -->
+    <label for="orderNumber">Order # (fixed):</label>
+    <input type="text" id="orderNumber" value="Order #" disabled>
+
+    <label for="startNumber">Start Order Number:</label>
+    <input type="number" id="startNumber" placeholder="Start from number" value="1001" required>
+
+    <!-- Add Brand -->
+    <label for="brand">Brand Name:</label>
+    <input type="text" id="brand" placeholder="Enter brand name" required>
+    <button type="button" id="addBrandButton">Add Brand</button>
+
+    <!-- Display added brands -->
+    <ul id="brandList" class="product-list"></ul>
+
+    <!-- Add Products -->
+    <label for="productPrice">Add Product Price:</label>
+    <input type="number" id="productPrice" placeholder="Enter product price" required>
+
+    <!-- Choose Brand for Product -->
+    <label for="productBrand">Choose Brand:</label>
+    <select id="productBrand">
+      <option value="" disabled selected>Select a brand</option>
+    </select>
+
+    <button type="button" id="addProductButton">Add Product</button>
+
+    <!-- Display added products -->
+    <ul id="productList" class="product-list"></ul>
+
+    <label for="notificationInterval">Send Notification Every (seconds):</label>
+    <input type="number" id="notificationInterval" placeholder="e.g. 2 seconds" value="0.15" required>
+
+    <label for="notificationsPerInterval">Send X Notifications Every Y Seconds:</label>
+    <input type="number" id="notificationsPerInterval" placeholder="e.g. 2 notifications" value="1" required>
+
+    <label for="notificationsCount">Total Notifications to Send:</label>
+    <input type="number" id="notificationsCount" placeholder="e.g. 10 notifications" value="10" required>
+
+    <button id="sendButton">Send Notifications</button>
+
+    <p class="message" id="message"></p>
+  </div>
+
+  <script src="../src/index.js"></script>
+</body>
+</html>
