@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/shopiNoti/static/css/main.ff2d9ee2.css",
+    "main.js": "/shopiNoti/static/js/main.6e82c9d8.js",
+    "index.html": "/shopiNoti/index.html",
+    "main.ff2d9ee2.css.map": "/shopiNoti/static/css/main.ff2d9ee2.css.map",
+    "main.6e82c9d8.js.map": "/shopiNoti/static/js/main.6e82c9d8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff2d9ee2.css",
+    "static/js/main.6e82c9d8.js"
+  ]
+}
